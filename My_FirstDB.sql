@@ -1,0 +1,2 @@
+ CREATE DATABASE My_FirstDB;
+ USE My_FirstDB;
