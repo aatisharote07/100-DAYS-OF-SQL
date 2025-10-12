@@ -42,3 +42,6 @@ FROM sleep
 WHERE `Exercise frequency`>=3
 GROUP BY Awakenings 
 ORDER BY Awakenings DESC
+
+
+
