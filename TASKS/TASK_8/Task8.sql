@@ -5,12 +5,15 @@ SELECT AVG(`Sleep duration`) FROM (
 SELECT * FROM task33.sleepefficiency WHERE `Sleep duration` >= 7.5 AND Gender= 'male' ORDER BY `Sleep duration` DESC LIMIT 15
 ) AS sleeps;
 
+
 -- Q2: Show avg deep sleep time for both gender.Round result at 2 decimal 
 --     places.
 --     Note - sleep time and deep sleep percentage will give you, deep sleep time
 SELECT Gender,AVG(`Sleep duration`*(`Deep sleep percentage`/100)) AS 'avg_deep_sleep'
 FROM sleep
 GROUP BY Gender;
+
+
 -- Q3: Find out the lowest 10th to 30th light sleep percentage records where 
 --     deep sleep percentage values are between 25 to 45. 
 --     Display age, light sleep percentage and deep sleep percentage columns 
@@ -18,6 +21,8 @@ GROUP BY Gender;
 SELECT Age,`Light sleep percentage`,`Deep sleep percentage` FROM sleep
 WHERE `Deep sleep percentage` BETWEEN 25 AND 45
 ORDER BY `Light sleep percentage` LIMIT 10,20;
+
+
 -- Q4: Group by on exercise frequency and smoking status and 
 --     show average deep sleep time, average light sleep time 
 --     and avg rem sleep time.
@@ -30,6 +35,8 @@ AVG(`Sleep duration`*(`Light sleep percentage`/100))
 FROM sleep
 GROUP BY `Exercise frequency`,`Smoking status`
 ORDER BY AVG(`Sleep duration`*(`Deep sleep percentage`/100));
+
+
 -- Q5: Group By on Awakening and show AVG Caffeine consumption, 
 --     AVG Deep sleep time and AVG Alcohol consumption only for 
 --     people who do exercise atleast 3 days a week. 
@@ -42,6 +49,8 @@ FROM sleep
 WHERE `Exercise frequency` >= 3
 GROUP BY Awakenings
 ORDER BY Awakenings DESC;
+
+
 -- Q6: Display those power stations which have average 'Monitored Cap.(MW)'
 --     (display the values) between 1000 and 2000 and the number of occurance
 --     of the power stations (also display these values) is greater than 200.
@@ -53,9 +62,6 @@ FROM power
 GROUP BY `Power Station`
 HAVING (Avg_Capacity BETWEEN 1000 AND 2000) AND Occurence > 200 
 ORDER BY Avg_Capacity DESC;
-
-
-
 
 
 
@@ -80,12 +86,15 @@ WHERE Type LIKE '%Public%' AND Expense LIKE '%Tuition%'
 GROUP BY State
 ORDER BY AVG(Value) ASC LIMIT 1;
 
+
 -- Q9: 2nd Costliest state for Private education in year 2021. 
 --     Consider, Tution and Room fee both.
 SELECT State,AVG(Value) FROM undergrad
 WHERE Year = 2021 AND Type LIKE '%Private%'
 GROUP BY State
 ORDER BY AVG(Value) DESC LIMIT 1,1;
+
+
 -- Q10: Display total and average values of Discount_offered 
 --      for all the combinations of 'Mode_of_Shipment' (display this feature)
 --      and 'Warehouse_block' (display this feature also) for all male ('M')
