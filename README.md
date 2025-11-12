@@ -7,7 +7,7 @@ This repository is dedicated to practicing and mastering SQL by solving queries,
 
 ## 🚀 Goals
 - Strengthen SQL fundamentals  
-- Practice different types of queries (DDL, DML, DQL, TCL, DCL)  
+- Practice different types of queries (DDL, DML, DQL, TCL)  
 - Understand joins, subqueries, views, stored procedures, and triggers  
 - Work with sample datasets (like employees, sales, e-commerce, etc.)  
 - Build consistency through **daily practice**  
