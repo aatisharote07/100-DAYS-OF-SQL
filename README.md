@@ -1,7 +1,7 @@
 # 🗄️ 100 Days of SQL  
 
 Welcome to my **100 Days of SQL** challenge! 🎉  
-This repository is dedicated to practicing and mastering SQL by solving queries, building projects, and exploring real-world database problems over the span of 100 days.  
+This repository is dedicated to practicing and mastering SQL by solving queries, building projects,Case Studies and exploring real-world database problems over the span of 100 days.  
 
 ---
 
