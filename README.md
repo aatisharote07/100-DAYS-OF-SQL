@@ -24,7 +24,7 @@ This repository documents my journey of mastering SQL through daily practice, pr
 Each day will include:  
 - A focused topic or concept  
 - Practice queries  
-- Dataset (if required)  
+- Dataset  
   
 
 ---
