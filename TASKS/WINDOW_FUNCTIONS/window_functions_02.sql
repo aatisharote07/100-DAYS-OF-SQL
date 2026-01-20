@@ -30,4 +30,23 @@ ORDER BY claim_diff DESC;
 -- Q9. For each patient, find the Maximum BMI value
 SELECT *, 
 MAX(bmi) OVER(ORDER BY age ROWS BETWEEN 1 FOLLOWING AND 3 FOLLOWING)
-FROM insurance
+FROM insurance;
+
+
+-- Q.10 For each Patient, Find the rolling average of the last 2 claims.
+SELECT *,
+AVG(claim) OVER(ROWS BETWEEN 2 PRECEDING AND 1 PRECEDING )
+FROM insurance;
+
+-- Q11. Find the first claimed insurance value for male and female patients, 
+-- within each region order the data by patient age in ascending order, 
+-- and only include patients who are non-diabetic and have a bmi value between 25 and 30.
+WITH filtered_data AS(
+SELECT * FROM insurance
+WHERE diabetic = "No" AND bmi BETWEEN 25 AND 30)
+
+SELECT region,gender,first_claim FROM (SELECT *,
+FIRST_VALUE(claim) OVER(PARTITION BY region,gender ORDER BY age) AS first_claim,
+ROW_NUMBER() OVER(PARTITION BY region,gender ORDER BY age) AS row_num
+FROM filtered_data) t 
+WHERE t.row_num = 1
