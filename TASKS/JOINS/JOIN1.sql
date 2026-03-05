@@ -10,7 +10,7 @@
 -- G	Personal Autonomy and Individual Rights
 -- CL	Civil Liberties Scores
 -- Status	F=Free, PF=Partly Free, NF=Not Free
--- Q-1 Find out top 10 countries' which have maximum A and D values.
+-- Q-1 Find out top 10 countries' which have maximum A and D values
 SELECT A.country,A,D FROM (SELECT Country,A FROM country_ab
 ORDER BY A DESC LIMIT 10) A
 LEFT JOIN
