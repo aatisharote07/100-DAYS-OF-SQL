@@ -1,4 +1,4 @@
--- Find the average rating of smartphone brands which have more than 20 phones
+-- Find the average rating of smartphone brands which have more than 20 phones.
 SELECT brand_name,AVG(rating) AS "avg_rating",COUNT(*) AS "num_phones",
 AVG(price) AS "avg_price"
 FROM phones.smartphones 
@@ -14,7 +14,7 @@ GROUP BY brand_name HAVING
 num_phones < 10 
 ORDER BY avg_ram DESC LIMIT 3
 
--- Find the avg price of all the phone brands with avg rating > 70 and num_phones more than 10 among 5g enabled phones
+-- Find the avg price of all the phone brands with avg rating > 70 and num_phones more than 10 among 5g enabled phones.
 SELECT brand_name, ROUND(AVG(price),2) AS "avg_price"
 FROM smartphones
 WHERE has_5g = "True"
