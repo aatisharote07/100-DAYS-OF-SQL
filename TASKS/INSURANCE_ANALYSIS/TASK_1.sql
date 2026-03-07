@@ -41,7 +41,7 @@ SELECT COUNT(*) FROM insurance
 WHERE age < 17 
 AND (bloodpressure BETWEEN 80+(age * 2) AND 100 + (age * 2));
 
--- 9. What is the average claim amount for non-smoking female patients 
+-- 9. What is the average claim amount for non-smoking female patients-
 -- who are diabetic?
 SELECT AVG(claim) FROM insurance
 WHERE gender = 'female'
