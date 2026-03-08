@@ -13,7 +13,7 @@ This repository documents my journey of mastering SQL through daily practice, pr
   - Subqueries & CTEs  
   - Views  
   - Functions & Triggers  
-- Work with datasets from various domains (employees, sales, finance, e-commerce, etc) .  
+- Work with datasets from various domains (employees, sales, finance, e-commerce, etc).  
 - Build consistency through daily challenges.  
 - Improve query optimization & real-world thinking.  
 
