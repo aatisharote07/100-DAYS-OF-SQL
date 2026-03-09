@@ -25,7 +25,7 @@ dep_time BETWEEN "10:00:00" AND "14:00:00";
 SELECT COUNT(*) FROM flights
 WHERE source = "Banglore" 
 AND DAYNAME(date_of_journey) IN
-("Saturday","Sunday");
+("Saturday","Sunday","Friday");
 
 -- 6. Calculate the arrival time for all flights by adding the duration to the departure
 -- time.
