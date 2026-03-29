@@ -7,7 +7,7 @@ ORDER BY COUNT(*) DESC LIMIT 1;
 -- 2. Which week day has most costly flights
 SELECT DAYNAME(date_of_journey),AVG(price) FROM flights
 GROUP BY DAYNAME(date_of_journey)
-ORDER BY AVG(price) DESC LIMIT 1;
+ORDER BY AVG(price) DESC LIMIT 3;
 
 -- 3. Find number of indigo flights every month
 SELECT MONTHNAME(date_of_journey),COUNT(*) FROM flights
