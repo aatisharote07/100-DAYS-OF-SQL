@@ -4,7 +4,7 @@ AVG(price) AS "avg_price"
 FROM phones.smartphones 
 GROUP BY brand_name
 HAVING num_phones > 20
-ORDER BY avg_price DESC LIMIT 10
+ORDER BY avg_price DESC LIMIT 5
 
 -- Find the top 3 brands with the highest avg ram that have a refresh rate of atleast 90 hz and fast charging available and dont consider brands which have less than 10 phones.
 SELECT brand_name, AVG(ram_capacity) AS "avg_ram", refresh_rate, fast_charging_available = 1,COUNT(*) AS "num_phones"
