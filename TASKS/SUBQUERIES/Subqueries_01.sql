@@ -27,7 +27,7 @@ HAVING COUNT(*)> 50
 ORDER BY Year,Team;
 
 -- Problem 5
--- Display the names of all athletes who have won medals in more than one sport in the same year
+-- Display the names of all athletes who have won medals in more than one sport in the same year.
 SELECT DISTINCT name FROM olympics 
 WHERE ID in (SELECT DISTINCT ID FROM olympics 
 			 WHERE Medal IS NOT NULL 
