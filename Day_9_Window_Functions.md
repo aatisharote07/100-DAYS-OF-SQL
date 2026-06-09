@@ -1,4 +1,4 @@
-# Day 9: SQL Challenge - Window Functions (Cumulative Sum)
+# Day 9: SQL Challenge - Window Functions (Cumulative Sum) 
 
 ## 📌 Business Scenario
 A finance director wants to monitor day-over-day cash flow for the month. They need a report showing the daily net revenue and the cumulative running total of revenue generated since the beginning of the month to assess company liquidity and cash growth.
