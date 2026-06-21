@@ -6,7 +6,7 @@ This repository documents my journey of mastering SQL through daily practice, pr
 ---
 
 ## 🚀 Goals  
-- Strengthen SQL fundamentals  
+- Strengthen SQL fundamentals.  
 - Practice all types of queries — **DDL, DML, DCL, TCL**  
 - Master key concepts:  
   - Joins (Inner, Left, Right, Full, Cross, Self-Join)  
