@@ -1,5 +1,5 @@
 # 🗄️ 100 Days of SQL       
-
+ 
 Welcome to my **100 Days of SQL Challenge**! 🎉   
 This repository documents my journey of mastering SQL through daily practice, problem-solving, case studies, and real-world datasets.
 
