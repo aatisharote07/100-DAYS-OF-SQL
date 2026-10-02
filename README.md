@@ -16,7 +16,7 @@ This repository documents my journey of mastering SQL through daily practice, pr
 - Work with datasets from various domains (employees, sales, finance, e-commerce, etc).  
 - Build consistency through daily challenges.  
 - Improve query optimization & real-world thinking.  
-
+ 
 ---
 
 ## 📅 Daily Structure  
