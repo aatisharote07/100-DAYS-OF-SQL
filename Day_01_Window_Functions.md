@@ -9,7 +9,7 @@ An e-commerce platform wants to identify the top 2 highest-selling products with
 
 ### Table Structure & Sample Data
 
-```sql
+```sql 
 -- Create Products Table
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
