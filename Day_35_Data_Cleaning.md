@@ -10,7 +10,7 @@ For downstream forecasting models to function, we need to clean this dataset by 
 ## 🗄️ The Schema
 
 ### Table Structure & Sample Data
-
+ 
 ```sql
 -- Create Sensor Logs Table
 CREATE TABLE sensor_logs (
