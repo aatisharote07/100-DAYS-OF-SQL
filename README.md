@@ -22,7 +22,7 @@ This repository documents my journey of mastering SQL through daily practice, pr
 ## 📅 Daily Structure  
 Each day will include:  
 - A focused topic or concept  
-- Practice queries  
+- Practice queries   
 - Dataset  
   
 
